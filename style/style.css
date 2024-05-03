@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: 14px;
+    font-family: "manrope";
+    color: hsl(214, 17%, 51%);
+}
+
+h2{
+    font-family: "Manrope";
+    color: hsl(217, 19%, 35%);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+main{
+    max-width: 750px;
+    width: 100%;
+    position: relative;
+}
+
+body{
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+
+
+.main-content{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+}
+
+.content-img{
+    overflow: hidden;
+    width: 100%;
+}
+
+.img-center{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    object-fit: cover;
+    object-position: left;
+}
+
+.content-space{
+    margin: 35px;
+}
+
+/* .content-conteudo div{
+    margin-bottom: 20px;
+} */
+
+.content-conteudo p{
+    margin-top: 20px;
+}
+
+.teste {
+    position: absolute;
+    bottom: 90px;
+    right: -80px;
+}
+
+.share p {
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.share {
+    background-color: rgb(72, 85, 106);
+    padding: 15px 48px;
+    display: none;
+    gap: 15px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px rgba(72, 85, 106, 0.55);
+    position: relative;
+}
+
+.share img{
+    cursor: pointer;
+}
+
+.arrow {
+    position: absolute;
+    bottom: -9px; /* Posiciona a seta abaixo do balão */
+    left: calc(50% - 10px); /* Centraliza a seta horizontalmente */
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgb(72, 85, 106); /* Define a cor da seta */
+}
+.content-ext-user{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.content-user{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.img-user{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 2rem;
+}
+
+.name-user{
+    font-weight: 700;
+    color: hsl(214, 17%, 51%);
+}
+
+.date-user{
+    color: hsl(214, 17%, 51%);
+    /* opacity: 50%; */
+}
+
+/* .border-share{
+    padding: 5px;
+    border-radius: 50%;
+    background-color: hsl(210, 46%, 95%);
+    cursor: pointer;
+} */
+.fa-share{
+    padding: 8px;
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    color: rgb(72, 85, 106);
+    cursor: pointer;
+}
+
+.fa-share:hover{
+    color: white;
+    background-color: rgb(72, 85, 106);
+}
+
+@media (max-width: 700px){
+
+    .tentando{
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+}
+
+    main{
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 85%;
+        position: none;
+    }
+
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+    }
+
+    .teste{
+       left: 0;
+       bottom: 0;
+       right: 0;
+    }
+
+    .fa-share{
+        opacity: 0.9;
+    }
+
+    .fa-share:hover{
+        color: white;
+        background-color: rgb(72, 85, 106);
+    }
+
+    .content-conteudo p{
+        margin-bottom: 50px;
+    }
+
+    .share{
+        box-shadow: 0px 0px 0px rgb(0, 0, 0);
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-radius: 0%;
+    }
+
+    .arrow{
+        display: none;
+    }
+}
